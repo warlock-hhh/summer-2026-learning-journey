@@ -1,0 +1,47 @@
+# Secrets and local settings
+.env
+.env.*
+*.key
+*.pem
+id_rsa
+id_ed25519
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# C/C++ build artifacts
+build/
+bin/
+*.exe
+*.o
+*.obj
+*.out
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Models and large generated assets
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+*.mp4
+*.avi
+data/
+datasets/
+outputs/
+runs/
+
+# Private or restricted material
+private/
+course-source-materials/
+student-data/
+
