@@ -20,8 +20,7 @@
 
 | Week | ML2021 | LeetCode C++ | C++ TA | Pi / YOLO |
 |---|---:|---:|---|---|
-| W1 | 0 / 5 | 0 | Environment & I/O | Pi OS & SSH |
-| W2 | 0 / 5 | 0 | Types & Expressions | Python & venv |
+| W1–W2 | HW1、HW2 | 5 | 基礎運算與 I/O 練習 3 題 | 完成 OS 映像燒錄 |
 | W3 | 0 / 5 | 0 | Expressions | YOLO Concepts |
 | W4 | 0 / 5 | 0 | Selection | PC Image Inference |
 | W5 | 0 / 5 | 0 | Loops | Pi Image Inference |
@@ -43,9 +42,8 @@
 
 ## Weekly Reports
 
-- [Week 1](weekly-reports/week01.md)
+- [Week 1–2｜2026/07/06–2026/07/19](weekly-reports/week01.md)
 
 ## Public Repository Policy
 
 This repository only contains my original notes, code, experiments, and teaching materials. It does not publish private student information, unreleased exams, proprietary course files, passwords, API keys, model weights, or restricted datasets.
-

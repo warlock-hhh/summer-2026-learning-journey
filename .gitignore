@@ -30,6 +30,7 @@ Thumbs.db
 # Models and large generated assets
 *.pt
 *.pth
+*.ckpt
 *.onnx
 *.engine
 *.tflite
@@ -39,9 +40,10 @@ data/
 datasets/
 outputs/
 runs/
+prediction.csv
+submission.csv
 
 # Private or restricted material
 private/
 course-source-materials/
 student-data/
-
