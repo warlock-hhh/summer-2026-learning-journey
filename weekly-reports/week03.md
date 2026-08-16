@@ -2,7 +2,7 @@
 
 ## 本期摘要
 
-這兩週完成 ML2021 HW4 語者分類實驗，從單層 Transformer baseline 逐步調整 Encoder layers、attention heads、segment length、訓練 epochs 與 pooling，最終 Kaggle Public／Private 分數達到 `0.91833`／`0.91000`。專題課部分建立 YOLO 鳥類偵測最小專案，在 CPU-only 環境完成六張圖片的批次推論，共偵測 8 隻鳥。LeetCode 完成 6 題 Linked List；C++ TA 已完成 CH1～CH4 期中前備課；Raspberry Pi 實機本期沒有新增進度。
+這兩週完成 ML2021 HW4 語者分類實驗，從單層 Transformer baseline 逐步調整 Encoder layers、attention heads、segment length、訓練 epochs 與 pooling，最終 Kaggle Public／Private 分數達到 `0.91833`／`0.91000`。專題課部分建立 YOLO 鳥類偵測最小專案，在 CPU-only 環境完成六張圖片的批次推論，共偵測 8 隻鳥。LeetCode 完成 6 題 Linked List；C++ TA 與 Raspberry Pi 實機本期沒有新增進度。
 
 ## 已完成
 
@@ -46,16 +46,6 @@
 
 核心觀念是把「節點本身」與「節點之間的連結」分開思考。修改 `next` 前必須先保存後續節點；使用 dummy node 可以統一 head 可能被替換或刪除的邊界情況。
 
-### C++ TA：CH1～CH4 期中前備課
-
-- 完成 `程式設計一_CH1-CH4_期中前教學攻略`。
-- 完成教授說明版期中前備課總覽簡報。
-- 整合老師 CH1～CH4 講義與助教 Week01～Week08 對應內容。
-- 建立從 C++ 基本結構、輸入輸出、變數、運算式與型別轉換，到 `if`／`switch` 的教學路線。
-- 整理學生常見錯誤、作業批改檢查、分級練習、期中題型與 debug 流程。
-
-期中前的核心教學策略不是逐頁重講講義，而是讓學生將題目拆成 Input、Process、Output，再決定型別、公式或條件，最後以一般、邊界和錯誤測資驗證。
-
 ## 技術理解與問題處理
 
 1. Encoder layer 同時包含 self-attention、residual、LayerNorm 與 FFN。
@@ -77,8 +67,7 @@
 5. 學習 IoU、Precision、Recall、mAP50 與 mAP50-95。
 6. HW4 補上 padding mask，避免短語音 padding 參與 attention 與 pooling。
 7. 為 6 題 Linked List 補齊可編譯解答、測試案例及隔天重寫紀錄。
-8. C++ TA 下一階段銜接 CH5 迴圈；CH1～CH4 則以實際帶題與學生常見錯誤持續修訂。
 
 ## 教授 Meeting 簡短說法
 
-這兩週主要完成 ML2021 HW4 語者分類。我逐步增加 Encoder layer、attention heads 和語音 segment 長度，再延長訓練並加入 attention pooling，最終 Private score 從課程 baseline 的 0.75888 提升到 0.91000。專題課完成 CPU-only 的 YOLO 鳥類批次偵測；LeetCode 完成 6 題 Linked List。另外，C++ TA 已整理完成 CH1～CH4 期中前教學攻略與教授說明版簡報，內容從電腦及編譯概念、C++ 基本結構、運算式與型別陷阱，一直到 if 和 switch 的選擇結構。
+這兩週主要完成 ML2021 HW4 語者分類。我逐步增加 Encoder layer、attention heads 和語音 segment 長度，再延長訓練並加入 attention pooling，最終 Private score 從課程 baseline 的 0.75888 提升到 0.91000。專題課完成 CPU-only 的 YOLO 鳥類批次偵測；LeetCode 完成 6 題 Linked List。C++ TA 與 Raspberry Pi 實機本期沒有新增進度。

@@ -2,7 +2,7 @@
 
 ## 本期摘要
 
-這兩週完成 ML2021 HW3 Food-11 圖片分類，從原始 CNN baseline 逐步測試資料增強、正則化、學習率調整、架構變化與半監督學習，最後以五層 CNN 搭配 dynamic self-labeling，將 Kaggle Public accuracy 從 `48.387%` 提升至 `77.897%`。C++ 部分完成 9 題 Hash Table 題型。Raspberry Pi 與程式設計助教準備本期沒有新增進度。
+這兩週完成 ML2021 HW3 Food-11 圖片分類，從原始 CNN baseline 逐步測試資料增強、正則化、學習率調整、架構變化與半監督學習，最後以五層 CNN 搭配 dynamic self-labeling，將 Kaggle Public accuracy 從 `48.387%` 提升至 `77.897%`。C++ 部分完成 9 題 Hash Table 題型，C++ TA 完成 CH1～CH4 期中前備課。Raspberry Pi 本期沒有新增進度。
 
 ## 已完成
 
@@ -52,6 +52,16 @@ Pseudo-label 在 epoch 190 首次啟動，加入 1,783 張圖片；訓練後期�
 
 核心觀念：Hash table 的價值是用額外空間換取平均 O(1) 查找，但必須先定義正確的 key、value 與不變量；不能只是看到查找就直接套 `unordered_map`。
 
+### C++ TA：CH1～CH4 期中前備課
+
+- 完成 `程式設計一_CH1-CH4_期中前教學攻略`。
+- 完成教授說明版期中前備課總覽簡報。
+- 整合老師 CH1～CH4 與助教課對應內容。
+- 整理 C++ 基本結構、I/O、型別、運算式、整數除法、`if` 與 `switch`。
+- 建立學生常見錯誤、分級練習、作業批改與 debug 流程。
+
+核心教學策略是讓學生把題目拆成 Input、Process、Output，再決定型別、公式或條件，最後使用一般、邊界與錯誤測資驗證。
+
 ## 技術理解與反省
 
 1. Dropout 並非越高越好；早期 CNN 使用 `0.3` 反而造成 underfitting，`0.1` 較平衡。
@@ -68,7 +78,8 @@ Pseudo-label 在 epoch 190 首次啟動，加入 1,783 張圖片；訓練後期�
 2. 複習 HW3 的 model、augmentation、training loop 與 dynamic pseudo-label，確保能不看日誌完整說明。
 3. Raspberry Pi 完成首次開機、網路及 SSH 驗證；目前仍停留在映像燒錄階段。
 4. 下一份 ML 作業先建立最小可執行 baseline，再一次只調整一個主要變因。
+5. C++ TA 下一階段銜接 CH5 迴圈，並依實際帶題結果持續修訂 CH1～CH4。
 
 ## 教授 Meeting 簡短說法
 
-這兩週主要完成 ML2021 HW3 的 Food-11 圖片分類。我先從原始 CNN 開始，測試 augmentation、Dropout 和 scheduler，之後也嘗試 Residual、CutMix、Ensemble 與 pseudo-label。中途發現同時堆疊太多技巧會很難判斷真正的改善來源，因此最後重新建立一套一致的五層 CNN 流程，等 validation accuracy 超過 70% 後才啟動 dynamic self-labeling，每 5 epochs 更新高信心 pseudo labels。最後 Kaggle Public accuracy 從 48.4% 提升到 77.9%。C++ 部分完成 9 題 Hash Table 題型；Raspberry Pi 這兩週沒有新進度。
+這兩週主要完成 ML2021 HW3 的 Food-11 圖片分類。我先從原始 CNN 開始，測試 augmentation、Dropout 和 scheduler，之後也嘗試 Residual、CutMix、Ensemble 與 pseudo-label。最後建立五層 CNN 搭配 dynamic self-labeling，將 Kaggle Public accuracy 從 48.4% 提升到 77.9%。C++ 部分完成 9 題 Hash Table；C++ TA 完成 CH1～CH4 期中前教學攻略與教授說明版簡報；Raspberry Pi 沒有新進度。

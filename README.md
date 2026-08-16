@@ -21,8 +21,8 @@
 | Week | ML2021 | LeetCode C++ | C++ TA | Pi / YOLO |
 |---|---:|---:|---|---|
 | W1–W2 | HW1、HW2 | 5 | 基礎運算與 I/O 練習 3 題 | 完成 OS 映像燒錄 |
-| W3–W4 | HW3 Food-11 | 9 | 本期無新增 | 本期無進度 |
-| W5–W6 | HW4 Speaker Classification | 6 | 完成 CH1–CH4 期中前備課 | YOLO 鳥類批次偵測 |
+| W3–W4 | HW3 Food-11 | 9 | 完成 CH1–CH4 期中前備課 | 本期無進度 |
+| W5–W6 | HW4 Speaker Classification | 6 | 本期無新增 | YOLO 鳥類批次偵測 |
 | W7 | 0 / 5 | 0 | Arrays & Strings | Teaching Package |
 | W8 | 0 / 5 | 0 | Final Review | Dry Run & Fallback |
 
