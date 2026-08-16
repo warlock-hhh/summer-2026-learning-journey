@@ -22,8 +22,7 @@
 |---|---:|---:|---|---|
 | W1–W2 | HW1、HW2 | 5 | 基礎運算與 I/O 練習 3 題 | 完成 OS 映像燒錄 |
 | W3–W4 | HW3 Food-11 | 9 | 本期無新增 | 本期無進度 |
-| W5 | 0 / 5 | 0 | Loops | Pi Image Inference |
-| W6 | 0 / 5 | 0 | Functions | YOLO Mini Project |
+| W5–W6 | HW4 Speaker Classification | 6 | 本期無新增 | YOLO 鳥類批次偵測 |
 | W7 | 0 / 5 | 0 | Arrays & Strings | Teaching Package |
 | W8 | 0 / 5 | 0 | Final Review | Dry Run & Fallback |
 
@@ -43,6 +42,7 @@
 
 - [Week 1–2｜2026/07/06–2026/07/19](weekly-reports/week01.md)
 - [Week 3–4｜2026/07/20–2026/08/02](weekly-reports/week02.md)
+- [Week 5–6｜2026/08/03–2026/08/16](weekly-reports/week03.md)
 
 ## Public Repository Policy
 

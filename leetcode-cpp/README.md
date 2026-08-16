@@ -41,3 +41,25 @@
 - 題目 219 儲存最後索引即可，不需要保存每個元素的所有位置。
 - 題目 128 只從 `x - 1` 不存在的數字開始走，才能維持整體 O(n)。
 - 題目 202 除了 `unordered_set`，也可以用 Floyd cycle detection 將額外空間降為 O(1)。
+
+## 2026/08/03–2026/08/16：Linked List
+
+| 題號 | 題目 | 核心方法 | 時間 | 額外空間 |
+|---:|---|---|---:|---:|
+| 138 | Copy List with Random Pointer | Hash map 建立舊節點到新節點的映射 | O(n) | O(n) |
+| 141 | Linked List Cycle | Floyd 快慢指標偵測環 | O(n) | O(1) |
+| 21 | Merge Two Sorted Lists | Dummy node 串接較小節點 | O(n+m) | O(1) |
+| 2 | Add Two Numbers | 同步走訪兩串列並維護 carry | O(max(n,m)) | O(1)* |
+| 92 | Reverse Linked List II | Dummy node + 區間原地反轉 | O(n) | O(1) |
+| 19 | Remove Nth Node From End of List | Dummy node + 固定距離雙指標 | O(n) | O(1) |
+
+`*` 不計輸出串列所需空間。
+
+### 複習重點
+
+- Dummy node 能統一處理刪除或修改 head 的情況，減少邊界分支。
+- 快慢指標不只用於找環；維持固定距離也能一次走訪找到倒數第 n 個節點。
+- 題目 92 的關鍵是保存反轉區段前一節點、區段第一節點與區段後一節點，最後正確接回。
+- 題目 2 必須處理兩串列長度不同以及最後仍有 carry 的情況。
+- 題目 138 除了 hash map，亦可用節點交錯法把額外空間降至 O(1)，但指標操作較複雜。
+- Linked List 題目應先畫出指標變化，確認每次修改 `next` 前已保存後續節點。

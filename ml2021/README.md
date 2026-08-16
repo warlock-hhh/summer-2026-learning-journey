@@ -61,3 +61,35 @@
 - 共訓練 500 epochs，最佳 checkpoint 位於 epoch 443，約耗時 8 小時。
 
 核心結論：強 augmentation 能降低小資料集的過擬合，但 pseudo-label 必須先有可靠 teacher，並以 confidence threshold 控制錯誤標籤。Ensemble、TTA 與 CutMix 不保證有效，仍需用公平的 validation 實驗判斷。
+
+## HW4：Speaker Classification with Self-Attention
+
+- 任務：使用 `(T, 40)` log-Mel 特徵進行 600 類語者分類。
+- 資料：69,438 筆訓練特徵、6,000 筆測試特徵；固定 `seed=87` 做 90%／10% train-validation split。
+- 課程 baseline Public／Private：`0.76428`／`0.75888`。
+- 最佳 validation accuracy／loss：`86.85%`／`0.5565`。
+- 最終 Public／Private：`0.91833`／`0.91000`。
+
+### 實驗演進
+
+| 階段 | 設定 | Valid Acc | Public | Private |
+|---|---|---:|---:|---:|
+| E1 | 1 layer、2 heads、segment 128 | 60.46% | 0.73690 | 0.72166 |
+| E2 | Encoder layer 1 → 2 | 66.13% | 0.79904 | 0.80000 |
+| E3 | Attention heads 2 → 4 | 69.20% | 0.83285 | 0.81000 |
+| E4 | Segment 128 → 192 | 76.63% | 0.86023 | 0.84666 |
+| E5 | Segment 192 → 256 | 81.41% | 0.86714 | 0.85777 |
+| E6 | Epochs 20 → 30 | 83.73% | 0.89238 | 0.89611 |
+| E7 | Mean → Attention Pooling | **86.85%** | **0.91833** | **0.91000** |
+
+### 最終架構
+
+```text
+Input (T, 40)
+→ Linear Projection 40 → 80
+→ 2 Transformer Encoder Layers, 4 Heads
+→ Attention Pooling 80 → 64 → 1
+→ Classifier 80 → 80 → 600
+```
+
+訓練使用 segment length 256、batch size 16、30 epochs、AdamW、warmup 與 cosine decay。實驗顯示更長語音上下文能改善聲紋辨識，但 Self-Attention 成本約隨序列長度平方成長；Attention Pooling 則能避免重要 frame 被等權平均稀釋。
