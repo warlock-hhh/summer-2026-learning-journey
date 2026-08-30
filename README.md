@@ -23,8 +23,7 @@
 | W1–W2 | HW1、HW2 | 5 | 基礎運算與 I/O 練習 3 題 | 完成 OS 映像燒錄 |
 | W3–W4 | HW3 Food-11 | 9 | 完成 CH1–CH4 期中前備課 | 本期無進度 |
 | W5–W6 | HW4 Speaker Classification | 6 | 本期無新增 | YOLO 鳥類批次偵測 |
-| W7 | 0 / 5 | 0 | Arrays & Strings | Teaching Package |
-| W8 | 0 / 5 | 0 | Final Review | Dry Run & Fallback |
+| W7–W8 | HW5 Translation | 6 | 本期無新增 | 完成 YOLO 四小時教材包 |
 
 ## Repository Structure
 
@@ -43,6 +42,7 @@
 - [Week 1–2｜2026/07/06–2026/07/19](weekly-reports/week01.md)
 - [Week 3–4｜2026/07/20–2026/08/02](weekly-reports/week02.md)
 - [Week 5–6｜2026/08/03–2026/08/16](weekly-reports/week03.md)
+- [Week 7–8｜2026/08/17–2026/08/30](weekly-reports/week04.md)
 
 ## Public Repository Policy
 

@@ -63,3 +63,24 @@
 - 題目 2 必須處理兩串列長度不同以及最後仍有 carry 的情況。
 - 題目 138 除了 hash map，亦可用節點交錯法把額外空間降至 O(1)，但指標操作較複雜。
 - Linked List 題目應先畫出指標變化，確認每次修改 `next` 前已保存後續節點。
+
+## 2026/08/17–2026/08/30：Binary Tree and Expression Parsing
+
+| 題號 | 題目 | 核心方法 | 時間 | 額外空間 |
+|---:|---|---|---:|---:|
+| 104 | Maximum Depth of Binary Tree | DFS 遞迴回傳左右子樹最大深度 | O(n) | O(h) |
+| 100 | Same Tree | 同步遞迴比較結構與節點值 | O(n) | O(h) |
+| 224 | Basic Calculator | Stack／遞迴解析括號、正負號與數字 | O(n) | O(n) |
+| 101 | Symmetric Tree | 鏡像遞迴比較外側與內側子樹 | O(n) | O(h) |
+| 112 | Path Sum | DFS 累減剩餘目標，到 leaf 判斷 | O(n) | O(h) |
+| 105 | Construct Binary Tree from Preorder and Inorder Traversal | Preorder 決定 root，inorder 切分子樹 | O(n) | O(n) |
+
+### 複習重點
+
+- Tree recursion 先定義函式代表什麼，再處理空節點與 leaf 的 base case。
+- 題目 100 比較「相同位置」；題目 101 比較「鏡像位置」，遞迴配對方向不同。
+- 題目 112 必須在 leaf 才能確認 root-to-leaf path sum，不能在中途提早成功。
+- 題目 105 應用 hash map 保存 inorder 索引，避免每層線性搜尋造成 O(n²)。
+- 題目 224 不屬於樹題；核心是 expression state、括號與 sign 的保存與還原。
+
+其中 `h` 為樹高；平衡樹約 O(log n)，最差退化樹為 O(n)。

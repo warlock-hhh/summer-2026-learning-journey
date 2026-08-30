@@ -45,6 +45,9 @@ submission.csv
 project-course-day3-yolo/images/
 project-course-day3-yolo/weights/
 project-course-day3-yolo/.ultralytics/
+project-course-day3-yolo/classroom-kit/project/images/
+project-course-day3-yolo/classroom-kit/project/weights/
+project-course-day3-yolo/classroom-kit/project/outputs/
 
 # Private or restricted material
 private/

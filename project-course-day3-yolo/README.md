@@ -59,3 +59,19 @@ python -m venv .venv
 3. 加入無鳥、其他動物、小鳥、遮擋與複雜背景圖片。
 4. 將每張圖片的偵測統計輸出成 CSV。
 5. 學習 IoU、Precision、Recall、mAP50 與 mAP50-95。
+
+## Four-Hour Classroom Kit
+
+已完成 Raspberry Pi × OpenCV × YOLO 四小時課堂教材，正式題目為「圖片多物件偵測與分類統計系統」。教材以書籍第 11 章為主線，但更新成專案 `.venv`、VS Code 與 Ultralytics YOLO26n。
+
+教材內容位於 [`classroom-kit/`](classroom-kit/)：
+
+- 課前準備與五道驗收
+- 教師逐分鐘講稿
+- 學生操作手冊
+- 投影片逐頁內容
+- 故障排除與離線備案
+- 學生成果單
+- 三階段學生程式與教師完成版
+
+課堂由 OpenCV 讀圖開始，再進入 YOLO inference、class／confidence／bounding box，最後使用 `Counter` 完成多物件分類統計。Raspberry Pi 實機尚未完成開機、SSH、環境安裝及整包 dry run，因此目前狀態是「教材完成、實機未驗證」。

@@ -93,3 +93,23 @@ Input (T, 40)
 ```
 
 訓練使用 segment length 256、batch size 16、30 epochs、AdamW、warmup 與 cosine decay。實驗顯示更長語音上下文能改善聲紋辨識，但 Self-Attention 成本約隨序列長度平方成長；Attention Pooling 則能避免重要 frame 被等權平均稀釋。
+
+## HW5：English-to-Traditional-Chinese Translation
+
+- 任務：TED2020 英文翻譯成繁體中文。
+- 訓練／驗證資料：390,041／3,939 組平行句對。
+- Tokenization：SentencePiece，8,000 joined vocabulary。
+- 執行環境：Windows、WSL2、Docker、RTX 3050 Laptop GPU 4 GB。
+- 評估限制：JudgeBoi 已失效，只能報告 local validation BLEU。
+
+### 模型比較
+
+| 模型 | 最佳 Epoch | Local Validation BLEU |
+|---|---:|---:|
+| 老師式 GRU + Attention | 28 | 18.60 |
+| fairseq LSTM | 40 | 20.64 |
+| 4-layer Transformer | **38** | **23.59** |
+
+最終 Transformer 使用 4-layer Encoder／Decoder、`d_model=256`、4 heads、FFN 1024、Pre-LayerNorm、label smoothing、warmup、inverse-square-root scheduler、FP16、gradient accumulation 與 beam search 5。
+
+核心結論：GRU、LSTM 與 Transformer 都屬於 Seq2Seq Encoder–Decoder；差別在序列資訊的傳遞方式。Transformer 以 self-attention 建立全句關係，將 BLEU 從 GRU 的 18.60 提升到 23.59，但 BLEU 仍須搭配人工案例檢查語意錯譯。
