@@ -72,3 +72,12 @@ project-course-day3-yolo/classroom-kit/project/outputs/
 private/
 course-source-materials/
 student-data/
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+kaggle.json
+credentials*.json
+secrets*/
