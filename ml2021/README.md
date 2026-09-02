@@ -1,5 +1,18 @@
 # ML2021 Notes
 
+本目錄不只保存分數，而是保存從資料、模型、Loss、Optimization 到 Evaluation 的完整學習過程。大型資料集、模型權重與 Kaggle submission 不納入 Git；依各專案 README 取得資料後即可重跑。
+
+| Project | Task | Best result | Reproduction |
+|---|---|---:|---|
+| [HW1](hw01-covid-regression/README.md) | Tabular regression | Private RMSE 0.92892 | Ridge baseline |
+| [HW2](hw02-phoneme-classification/README.md) | Phoneme classification | Private Acc. 0.73610 | PyTorch MLP |
+| [HW3](hw03-food11-classification/README.md) | Image classification | Private Acc. 76.748% | CNN + dynamic pseudo-label |
+| [HW4](hw04-speaker-classification/README.md) | Speaker classification | Private Acc. 0.91000 | Transformer encoder |
+| [HW5](hw05-machine-translation/README.md) | English-to-Chinese translation | Local BLEU 23.59 | Docker + Transformer |
+
+整體觀念整理：[ML 大架構複習筆記](ML大架構複習筆記.md)
+
+
 ## HW1：COVID-19 Cases Prediction
 
 - 類型：Tabular regression

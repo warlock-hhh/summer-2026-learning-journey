@@ -1,0 +1,20 @@
+services:
+  hw5:
+    build:
+      context: .
+      args:
+        FAIRSEQ_COMMIT: 9a1c497
+    image: ml2021-hw5:local
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    shm_size: 2gb
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    stdin_open: true
+    tty: true

@@ -1,0 +1,13 @@
+# 與 PyTorch 1.10 / Python 3.7 及 2021 fairseq 相容的固定版本。
+numpy==1.21.6
+cython==0.29.36
+cffi==1.15.1
+hydra-core==1.0.7
+omegaconf==2.0.6
+regex==2021.4.4
+sacrebleu==1.5.1
+sacremoses==0.0.53
+sentencepiece==0.1.96
+tqdm==4.66.1
+editdistance==0.6.2
+matplotlib==3.5.3

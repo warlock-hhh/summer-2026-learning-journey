@@ -37,6 +37,17 @@
 └─ project-course-day3-yolo/# YOLO experiments and teaching materials
 ```
 
+## Machine Learning Portfolio
+
+ML2021 HW1～HW5 已整理為可閱讀、可重現的作品集；每個專案包含程式、實驗紀錄、結果、資料放置方式與限制說明。
+
+- [HW1：COVID-19 Regression](ml2021/hw01-covid-regression/README.md)
+- [HW2：TIMIT Phoneme Classification](ml2021/hw02-phoneme-classification/README.md)
+- [HW3：Food-11 CNN and Pseudo-labeling](ml2021/hw03-food11-classification/README.md)
+- [HW4：Speaker Classification with Self-Attention](ml2021/hw04-speaker-classification/README.md)
+- [HW5：English-to-Traditional-Chinese Seq2Seq](ml2021/hw05-machine-translation/README.md)
+- [ML 大架構複習筆記](ml2021/ML大架構複習筆記.md)
+
 ## Weekly Reports
 
 - [Week 1–2｜2026/07/06–2026/07/19](weekly-reports/week01.md)
@@ -46,4 +57,4 @@
 
 ## Public Repository Policy
 
-This repository only contains my original notes, code, experiments, and teaching materials. It does not publish private student information, unreleased exams, proprietary course files, passwords, API keys, model weights, or restricted datasets.
+This repository contains my original notes, experiments, teaching materials, and attributed adaptations of public course starter code. It does not publish private student information, unreleased exams, proprietary course files, passwords, API keys, model weights, or restricted datasets.
