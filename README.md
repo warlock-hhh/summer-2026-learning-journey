@@ -12,10 +12,10 @@
 
 > **已結案／Archived**
 >
-> - 執行期間：2026/07/06–2026/09/20
-> - 正式結案：2026/09/20
+> - 執行期間：2026/07/06–2026/09/07 當週
+> - 結案文件補登：2026/09/20
 
-本計畫已完成暑期階段任務並停止持續更新。最終成果、目標達成度、未完成項目與後續移交請見 [暑期訓練計畫結案報告](FINAL_REPORT.md)。後續研究室、課程或硬體實作將建立新的專案紀錄，不回填為本次暑期成果。
+本計畫已於 2026/09/07 當週完成暑期階段任務並停止持續更新，結案文件於 2026/09/20 補登。最終成果、目標達成度、未完成項目與後續移交請見 [暑期訓練計畫結案報告](FINAL_REPORT.md)。後續研究室、課程或硬體實作將建立新的專案紀錄，不回填為本次暑期成果。
 
 ## Goals
 
@@ -79,7 +79,7 @@ ML2021 HW1～HW5 已整理為可閱讀、可重現的作品集；每個專案包
 - [Week 3–4｜2026/07/20–2026/08/02](weekly-reports/week02.md)
 - [Week 5–6｜2026/08/03–2026/08/16](weekly-reports/week03.md)
 - [Week 7–8｜2026/08/17–2026/08/30](weekly-reports/week04.md)
-- [Final Phase｜Raspberry Pi 專題課授課](weekly-reports/final-phase.md)
+- [Final Phase｜2026/08/31–2026/09/07 當週](weekly-reports/final-phase.md)
 - [Final Report｜2026 Summer Closure](FINAL_REPORT.md)
 
 ## Public Repository Policy

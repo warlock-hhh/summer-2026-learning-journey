@@ -1,8 +1,8 @@
-# Final Phase｜Raspberry Pi 專題課授課
+# Final Phase｜2026/08/31–2026/09/07 當週
 
 ## 本期摘要
 
-8/30 之後的暑期後段沒有新增 Machine Learning、LeetCode 或 C++ TA 進度，工作集中在 Raspberry Pi × OpenCV × YOLO 專題課，並完成實際授課。這項成果補足 Week 7–8 當時只記錄「教材完成、尚未確認實際授課」的狀態。
+8/30 之後至 9/7 當週沒有新增 Machine Learning、LeetCode 或 C++ TA 進度，工作集中在 Raspberry Pi × OpenCV × YOLO 專題課，並完成實際授課。暑期計畫於該週結束；本文件是在 9/20 補做結案時補登。這項成果補足 Week 7–8 當時只記錄「教材完成、尚未確認實際授課」的狀態。
 
 ## 已完成
 
