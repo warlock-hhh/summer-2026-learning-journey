@@ -2,8 +2,20 @@
 
 ## Current Progress
 
-- Raspberry Pi：已完成 OS 映像燒錄，尚未完成首次開機與 SSH 驗證。
+- Raspberry Pi：暑期後段集中完成專題課處理，並已完成實際授課。
 - Windows 備援環境：完成 YOLO 鳥類圖片批次推論。
+- 紀錄限制：repository 未完整保存每台 Pi 的環境驗收輸出與效能數據。
+
+## Published Student Package
+
+實際授課使用的學生下載版本已公開於 [warlock-hhh/raspberry-pi-yolo-course](https://github.com/warlock-hhh/raspberry-pi-yolo-course)。學生可直接執行：
+
+```bash
+git clone https://github.com/warlock-hhh/raspberry-pi-yolo-course.git
+cd raspberry-pi-yolo-course
+```
+
+公開教材包提供一致的 `requirements.txt`、環境檢查、第一次偵測、物件統計與 10 張練習圖片，避免上課現場各自複製檔案造成版本、路徑或缺檔問題。
 
 ## YOLO Bird Detection Minimal Project
 
@@ -74,4 +86,4 @@ python -m venv .venv
 - 學生成果單
 - 三階段學生程式與教師完成版
 
-課堂由 OpenCV 讀圖開始，再進入 YOLO inference、class／confidence／bounding box，最後使用 `Counter` 完成多物件分類統計。Raspberry Pi 實機尚未完成開機、SSH、環境安裝及整包 dry run，因此目前狀態是「教材完成、實機未驗證」。
+課堂由 OpenCV 讀圖開始，再進入 YOLO inference、class／confidence／bounding box，最後使用 `Counter` 完成多物件分類統計。四小時專題課後續已實際完成授課；由於本 repository 未保留每台 Raspberry Pi 的完整環境檢查、程式輸出與效能量測，目前可確認的是「教材完成且授課完成」，但不能回推所有設備都通過相同 benchmark。
